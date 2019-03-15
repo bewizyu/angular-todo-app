@@ -1,0 +1,10 @@
+<mat-list>
+  <h3 mat-subheader>Tasks done : {{getTaskDone().length}} / {{tasks.length}}</h3>
+  <div *ngFor="let task of tasks">
+    <app-todos-item
+      [task]="task"
+      (taskChanged)="handleTaskChanged($event)">
+    
+    </app-todos-item>
+  </div>
+</mat-list>

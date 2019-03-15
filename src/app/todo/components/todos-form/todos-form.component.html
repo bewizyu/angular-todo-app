@@ -1,0 +1,15 @@
+<div>
+  <input type="text"
+         [value]="title"
+         (change)="handleTitleChanged($event)">
+  
+  <button mat-raised-button
+          (click)="handleAddTask()"
+          [disabled]="title.length === 0">
+    Add Task
+  </button>
+  <button mat-raised-button
+          (click)="handleRemoveTasks()">
+    Remove Tasks
+  </button>
+</div>

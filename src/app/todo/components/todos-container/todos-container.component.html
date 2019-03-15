@@ -1,0 +1,6 @@
+<app-todos-form (taskAdded)="addTask($event)"
+                (tasksRemoved)="removeTasks()">
+</app-todos-form>
+<app-todos-list [tasks]="tasks"
+                (taskChanged)="updateTask($event)">
+</app-todos-list>

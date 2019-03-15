@@ -1,0 +1,8 @@
+<mat-list-item>
+  <div>
+    <mat-checkbox [checked]="task.isDone"
+                  (change)="handleCheckBoxChange()">
+      <span [style.textDecoration]="task.isDone ? 'line-through' : undefined">{{task.title}}</span>
+    </mat-checkbox>
+  </div>
+</mat-list-item>
